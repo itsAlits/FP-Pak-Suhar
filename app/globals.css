@@ -10,6 +10,12 @@
   background-size: cover;
 }
 
+#Head{
+  background-image: url("/Head.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .glass {
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.05);

@@ -9,7 +9,7 @@ export default function page() {
 
     return (
         <div className='h-screen'>
-            <div className='h-fit p-4 text-white bg-[#13302c]'>
+            <div id="Head" className='h-fit p-4 text-white'>
                 <div className='mt-3 flex justify-between items-center'>
                     <div><img src="/logosolo.png" className='h-8' alt="" /></div>
                     <div className='flex'>
