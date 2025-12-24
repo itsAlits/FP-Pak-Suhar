@@ -1,6 +1,7 @@
 'use client';
 import { MoveLeft, Trash2 } from 'lucide-react'
 import { useRouter } from 'next/navigation'
+import { toast } from 'react-toastify'
 import React, { useEffect, useState } from 'react'
 
 export default function page() {
@@ -29,7 +30,7 @@ export default function page() {
 
     const handleCheckout = () => {
         if (cart.length === 0) {
-            alert('Keranjang kosong');
+            toast.error('Keranjang kosong');
             return;
         }
         
@@ -48,7 +49,7 @@ export default function page() {
         localStorage.setItem('orders', JSON.stringify(existingOrders));
         localStorage.removeItem('cart');
         
-        alert('Pesanan berhasil dibuat!');
+        toast.success('Pesanan berhasil dibuat!');
         router.push('/Pesanan');
     };
 
