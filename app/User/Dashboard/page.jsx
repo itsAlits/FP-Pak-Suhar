@@ -49,7 +49,7 @@ export default function page() {
                     </div>
                 </div>
             </div>
-            <div className='bg-white rounded-t-xl p-4 -mt-2 h-full w-full'>
+            <div className='bg-white rounded-t-xl p-4 -mt-2 h-full w-full text-black'>
                 {showBanner && (
                     <div className='border p-4 border-amber-200 bg-amber-100 rounded-lg flex justify-between items-start'>
                         <div>
