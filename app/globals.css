@@ -1,5 +1,9 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default;
+}
+
 
 #Open {
   background-image: url("/bg.png");
