@@ -1,6 +1,6 @@
 export default function SellerCard({ image, name, address, rating, reviews }) {
     return (
-        <div className='bg-white border rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition flex-shrink-0 w-64'>
+        <div className='bg-white border border-base-300 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition flex-shrink-0 w-64'>
             <div className='h-40 overflow-hidden bg-gray-200'>
                 <img src={image} alt={name} className='w-full h-full object-cover' />
             </div>
