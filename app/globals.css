@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+#Open {
+  background-image: url("/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.glass {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  backdrop-filter: blur(10.6px);
+  -webkit-backdrop-filter: blur(10.6px);
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
