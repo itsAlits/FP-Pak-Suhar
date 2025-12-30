@@ -3,7 +3,7 @@ import MobileBottomNav from './MobileBottomNav'
 
 export default function DriverLayout({ children, activeTab, setActiveTab, driverName = 'Nama Pengemudi', balance = 'Rp 250.000' }) {
   return (
-    <div className='flex flex-col h-screen bg-gray-50'>
+    <div className='flex flex-col h-screen'>
       {/* Main Content */}
       <div className='flex-1 overflow-auto pb-24'>
         {/* Header Section */}

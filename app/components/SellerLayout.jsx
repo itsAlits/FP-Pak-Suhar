@@ -3,7 +3,7 @@ import MobileBottomNav from './MobileBottomNav'
 
 export default function SellerLayout({ children, activeTab, setActiveTab, storeName = 'Toko Anda', balance = 'Rp 500.000' }) {
   return (
-    <div className='flex flex-col h-screen bg-gray-50'>
+    <div className='flex flex-col h-screen '>
       {/* Main Content */}
       <div className='flex-1 overflow-auto pb-24'>
         {/* Header Section */}
