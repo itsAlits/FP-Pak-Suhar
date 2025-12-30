@@ -1,5 +1,4 @@
-import { BellRing, Search, User, Wallet, Send } from 'lucide-react'
-import MobileBottomNav from './MobileBottomNav'
+import { BellRing, Search, User, Wallet, Send, Package, MapPin, LogOut } from 'lucide-react'
 
 export default function DriverLayout({ children, activeTab, setActiveTab, driverName = 'Nama Pengemudi', balance = 'Rp 250.000' }) {
   return (
@@ -52,8 +51,33 @@ export default function DriverLayout({ children, activeTab, setActiveTab, driver
         </div>
       </div>
 
-      {/* Mobile Bottom Navigation */}
-      <MobileBottomNav activeTab={activeTab} setActiveTab={setActiveTab} />
+      {/* Driver Bottom Navigation */}
+      <div className='fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200'>
+        <div className='flex justify-around items-center h-20'>
+          <button
+            onClick={() => setActiveTab('orders')}
+            className={`flex flex-col items-center gap-1 py-2 px-4 transition-colors ${
+              activeTab === 'orders' ? 'text-[#19403B]' : 'text-gray-600 hover:text-gray-800'
+            }`}
+          >
+            <Package size={22} strokeWidth={1} />
+            <span className='text-xs font-light'>Pesanan</span>
+          </button>
+          <button
+            onClick={() => setActiveTab('map')}
+            className={`flex flex-col items-center gap-1 py-2 px-4 transition-colors ${
+              activeTab === 'map' ? 'text-[#19403B]' : 'text-gray-600 hover:text-gray-800'
+            }`}
+          >
+            <MapPin size={22} strokeWidth={1} />
+            <span className='text-xs font-light'>Peta</span>
+          </button>
+          <button className='flex flex-col items-center gap-1 py-2 px-4 text-gray-600 hover:text-gray-800 transition-colors'>
+            <LogOut size={22} strokeWidth={1} />
+            <span className='text-xs font-light'>Keluar</span>
+          </button>
+        </div>
+      </div>
     </div>
   )
 }

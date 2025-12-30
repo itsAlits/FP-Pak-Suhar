@@ -2,7 +2,9 @@
 import React, { useState } from 'react'
 import { CheckCircle, Clock, MapPin, Phone, Eye, Navigation } from 'lucide-react'
 import DriverLayout from '../../components/DriverLayout'
+import dynamic from 'next/dynamic'
 
+const MapComponent = dynamic(() => import('../../components/MapComponent'), { ssr: false })
 
 export default function DriverDashboard() {
     const [activeTab, setActiveTab] = useState('orders')
@@ -16,11 +18,11 @@ export default function DriverDashboard() {
             price: 155000,
             status: 'pending',
             pickupAddress: 'Jl. Gatot Subroto No.123',
-            pickupLat: -7.7956,
-            pickupLng: 110.3695,
+            pickupLat: -8.6500,
+            pickupLng: 115.2200,
             deliveryAddress: 'Jl. Merdeka No.45',
-            deliveryLat: -7.7945,
-            deliveryLng: 110.3800,
+            deliveryLat: -8.6450,
+            deliveryLng: 115.2350,
             distance: '2.3 km',
             timestamp: '14:30'
         },
@@ -32,7 +34,11 @@ export default function DriverDashboard() {
             price: 95000,
             status: 'picked_up',
             pickupAddress: 'Jl. Diponegoro No.45',
+            pickupLat: -8.6700,
+            pickupLng: 115.2000,
             deliveryAddress: 'Jl. Sudirman No.67',
+            deliveryLat: -8.6750,
+            deliveryLng: 115.2150,
             distance: '1.8 km',
             timestamp: '13:45'
         },
@@ -44,7 +50,11 @@ export default function DriverDashboard() {
             price: 125000,
             status: 'delivered',
             pickupAddress: 'Jl. Ahmad Yani No.78',
+            pickupLat: -8.6600,
+            pickupLng: 115.1900,
             deliveryAddress: 'Jl. Gatot Subroto No.89',
+            deliveryLat: -8.6550,
+            deliveryLng: 115.2050,
             distance: '3.1 km',
             timestamp: '12:00'
         },
@@ -56,7 +66,11 @@ export default function DriverDashboard() {
             price: 85000,
             status: 'pending',
             pickupAddress: 'Jl. Sudirman No.56',
+            pickupLat: -8.6800,
+            pickupLng: 115.2300,
             deliveryAddress: 'Jl. Diponegoro No.112',
+            deliveryLat: -8.6850,
+            deliveryLng: 115.2100,
             distance: '2.5 km',
             timestamp: '14:15'
         },
