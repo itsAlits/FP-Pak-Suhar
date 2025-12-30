@@ -1,5 +1,5 @@
 import React from 'react'
-import { Home, ShoppingBag, User, Package } from 'lucide-react'
+import { Home, ShoppingBag, User, Package, LogOut } from 'lucide-react'
 import Link from 'next/link'
 
 export default function Nav() {
@@ -18,9 +18,9 @@ export default function Nav() {
           <ShoppingBag size={20} className='text-gray-600' />
           <span className='text-xs font-light text-gray-600'>Pesanan</span>
         </Link>
-        <Link href="/Profil" className='flex-1 flex flex-col items-center gap-1 p-2 rounded-lg hover:bg-gray-50 transition'>
-          <User size={20} className='text-gray-600' />
-          <span className='text-xs font-light text-gray-600'>Profil</span>
+        <Link href="/Login" className='flex-1 flex flex-col items-center gap-1 p-2 rounded-lg hover:bg-gray-50 transition'>
+          <LogOut size={20} className='text-gray-600' />
+          <span className='text-xs font-light text-gray-600'>Logut</span>
         </Link>
       </div>
     </nav>
